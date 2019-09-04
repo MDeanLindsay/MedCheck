@@ -1,0 +1,15 @@
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\nunit.engine.dll
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\nunit.engine.api.dll
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\MedCheck.deps.json
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\MedCheck.runtimeconfig.json
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\MedCheck.runtimeconfig.dev.json
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\MedCheck.dll
+C:\Users\MDL\Desktop\caremc\bin\Debug\netcoreapp2.2\MedCheck.pdb
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.csprojAssemblyReference.cache
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.csproj.CoreCompileInputs.cache
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.AssemblyInfoInputs.cache
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.AssemblyInfo.cs
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.dll
+C:\Users\MDL\Desktop\caremc\obj\Debug\netcoreapp2.2\MedCheck.pdb

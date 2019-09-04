@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj": {}
+    "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj": {
+    "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
+        "projectUniqueName": "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
         "projectName": "MedCheck",
-        "projectPath": "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
+        "projectPath": "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
         "packagesPath": "C:\\Users\\MDL\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MDL\\Desktop\\caremc\\obj\\",
+        "outputPath": "C:\\Users\\MDL\\Desktop\\caremc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
