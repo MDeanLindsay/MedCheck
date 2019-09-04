@@ -13,44 +13,47 @@ class Program
         using (IWebDriver driver = new ChromeDriver("C:\\"))
         {
             driver.Navigate().GoToUrl("https://www.caremc.com/caremcwebmvc/account/login");
+            driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
-
-            /* 
-            //TO DO: Handle new window switching from PPO.
-            string BaseWindow = driver.CurrentWindowHandle;
-            foreach (string handle in driver.WindowHandles) {
-                if (handle != BaseWindow)   {
-                    driver.SwitchTo().Window(driver.WindowHandles.First());
-                }
-            }
-            */
-           
-            var links = driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"));
+            string parentWindowHandle = driver.CurrentWindowHandle;
             
+            // Still not necessarily sure why I "have" to reassign links twice to get this to run.
+
+            var links = driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"));
+
             for (int i = 0; i < links.Count; i++)   {
                 links = driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"));
-                driver.Navigate().GoToUrl(links[i].GetAttribute("href"));
-                driver.Navigate().Back();
+                links[i].Click();
+                if (driver.CurrentWindowHandle == driver.WindowHandles.Last()) {
+                    driver.Navigate().Back();
+                }
+                else {
+                    driver.SwitchTo().Window(driver.WindowHandles.Last());
+                    driver.Close();
+                    driver.SwitchTo().Window(parentWindowHandle);
+                }
             }
-
-
+            
             var links2 = driver.FindElements(By.XPath("/html/body/div[2]/header/div[2]/div/ul/li/a"));
 
             for (int i = 0; i < links2.Count; i++)  {
                 links2 = driver.FindElements(By.XPath("/html/body/div[2]/header/div[2]/div/ul/li/a"));
-                driver.Navigate().GoToUrl(links2[i].GetAttribute("href"));
+                links2[i].Click();
                 driver.Navigate().Back();
             }
-            
-            /* 
-            // TODO: Figure out better way to deal with buttons.
-            var links3 = driver.FindElements(By.XPath("//button[contains(@class,'Submit')"));
-            */
 
+            // Thrown off iterating by button/input.
+            // Is there an easier to go about looping through without ids, similar tags, etc?
+           
+            driver.FindElement(By.XPath("//button[@class=\"SubmitBlue\"]")).Click();
+            driver.Navigate().Back();
+            driver.FindElement(By.XPath("//input[@class=\"SubmitOrange\"]")).Click();
+            driver.Navigate().Back();
+           
             driver.FindElement(By.XPath("//input[@id=\"UserName\"]")).Click();
             driver.FindElement(By.XPath("//input[@id=\"UserName\"]")).SendKeys("test");
 
-            Console.WriteLine("'It looks relatively easy and straight forward,' he said. Several hours online, he spent.");
+            Console.WriteLine("It worked!!!");
             driver.Quit();
         }    
     }
