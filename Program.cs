@@ -14,10 +14,8 @@ class Program
             driver.Manage().Window.Maximize();
             string parentWindowHandle = driver.CurrentWindowHandle;
             
-            var links = driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"));
-            for (int i = 0; i < links.Count; i++)   {
-                links = driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"));
-                links[i].Click();
+            for (int i = 0; i < 3; i++)   {
+                driver.FindElements(By.XPath("/html/body/div[2]/header/div[1]/div/div/a"))[i].Click();
                 if (driver.CurrentWindowHandle == driver.WindowHandles.Last()) {
                     driver.Navigate().Back();
                 }
@@ -28,10 +26,8 @@ class Program
                 }
             }
             
-            var links2 = driver.FindElements(By.XPath("/html/body/div[2]/header/div[2]/div/ul/li/a"));
-            for (int i = 0; i < links2.Count; i++)  {
-                links2 = driver.FindElements(By.XPath("/html/body/div[2]/header/div[2]/div/ul/li/a"));
-                links2[i].Click();
+            for (int i = 0; i < 3; i++)  {
+                driver.FindElements(By.XPath("/html/body/div[2]/header/div[2]/div/ul/li/a"))[i].Click();
                 driver.Navigate().Back();
             }
            
