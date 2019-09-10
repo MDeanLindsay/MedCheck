@@ -377,6 +377,12 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
+      "Selenium.WebDriver.ChromeDriver/76.0.3809.12600": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -667,7 +673,7 @@
           "System.Runtime.Extensions": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.6/_._": {}
+          "ref/netstandard1.6/System.Linq.dll": {}
         },
         "runtime": {
           "lib/netstandard1.6/System.Linq.dll": {}
@@ -1857,6 +1863,21 @@
         "lib/netstandard2.0/WebDriver.xml",
         "selenium.webdriver.3.141.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/76.0.3809.12600": {
+      "sha512": "5o/fGvckhFtcIhkoaDdrFM+dcVIlsPV/E7hCgIvu2aiw0jxws70H9MjrTcYgy1UN/HW97VsnLVCfKazyjtZ4zw==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/76.0.3809.12600",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "selenium.webdriver.chromedriver.76.0.3809.12600.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4453,7 +4474,9 @@
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.14.0",
       "Selenium.Support >= 3.141.0",
-      "Selenium.WebDriver >= 3.141.0"
+      "Selenium.WebDriver >= 3.141.0",
+      "Selenium.WebDriver.ChromeDriver >= 76.0.3809.12600",
+      "System.Linq >= 4.3.0"
     ]
   },
   "packageFolders": {
@@ -4463,11 +4486,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
+      "projectUniqueName": "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
       "projectName": "MedCheck",
-      "projectPath": "c:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
+      "projectPath": "C:\\Users\\MDL\\Desktop\\caremc\\MedCheck.csproj",
       "packagesPath": "C:\\Users\\MDL\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\MDL\\Desktop\\caremc\\obj\\",
+      "outputPath": "C:\\Users\\MDL\\Desktop\\caremc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4518,6 +4541,14 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[76.0.3809.12600, )"
+          },
+          "System.Linq": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           }
         },
         "imports": [

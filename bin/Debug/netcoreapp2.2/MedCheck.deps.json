@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "44f819988aa9e22077b883e73cd3eaad1403043e"
+    "signature": "46d79f57dba517d2a3b61f96f14f45ce7593f84b"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,7 +11,9 @@
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.14.0",
           "Selenium.Support": "3.141.0",
-          "Selenium.WebDriver": "3.141.0"
+          "Selenium.WebDriver": "3.141.0",
+          "Selenium.WebDriver.ChromeDriver": "76.0.3809.12600",
+          "System.Linq": "4.3.0"
         },
         "runtime": {
           "MedCheck.dll": {}
@@ -140,6 +142,7 @@
           }
         }
       },
+      "Selenium.WebDriver.ChromeDriver/76.0.3809.12600": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -654,6 +657,13 @@
       "sha512": "sha512-wPqzXO3f79DzqauTZSzLMKiaBCN0Z2Mv7KvWP+hnV6EL88zh/pJJnFtdIR1X5wa3hsTOpF/bBJs45rz7kArsiA==",
       "path": "selenium.webdriver/3.141.0",
       "hashPath": "selenium.webdriver.3.141.0.nupkg.sha512"
+    },
+    "Selenium.WebDriver.ChromeDriver/76.0.3809.12600": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5o/fGvckhFtcIhkoaDdrFM+dcVIlsPV/E7hCgIvu2aiw0jxws70H9MjrTcYgy1UN/HW97VsnLVCfKazyjtZ4zw==",
+      "path": "selenium.webdriver.chromedriver/76.0.3809.12600",
+      "hashPath": "selenium.webdriver.chromedriver.76.0.3809.12600.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
